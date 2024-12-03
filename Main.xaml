@@ -143,13 +143,7 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                     <WriteLine DisplayName="Fourth commit Line" sap:VirtualizedContainerService.HintSize="510,90" sap2010:WorkflowViewState.IdRef="WriteLine_2" Text="Fourth commit" />
-                    <ui:ExcelReadRange AddHeaders="True" DataTable="[dt_Ciudades]" DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="510,60" sap2010:WorkflowViewState.IdRef="ExcelReadRange_1" SheetName="Hoja1">
-                      <ui:ExcelReadRange.Range>
-                        <InArgument x:TypeArguments="x:String">
-                          <Literal x:TypeArguments="x:String" Value="" />
-                        </InArgument>
-                      </ui:ExcelReadRange.Range>
-                    </ui:ExcelReadRange>
+                    <ui:ExcelReadRange AddHeaders="True" DataTable="[dt_Ciudades]" DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="510,60" sap2010:WorkflowViewState.IdRef="ExcelReadRange_1" Range="A1" SheetName="Hoja1" />
                     <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="[index]" DataTable="[dt_Ciudades]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="510,1083" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
                       <ui:ForEachRow.Body>
                         <ActivityAction x:TypeArguments="sd:DataRow">
